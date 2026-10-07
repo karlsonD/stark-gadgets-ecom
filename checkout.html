@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Stark Gadgets</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Stark Gadgets</h1>
+      <nav>
+        <a href="index.html" class="nav-link">Shop</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </header>
+
+    <p id="status-message"></p>
+
+    <section id="checkout-summary">
+      <h2>Your Order</h2>
+      <div id="checkout-items"></div>
+      <p>Total: ₱<span id="checkout-total">0</span></p>
+    </section>
+
+    <section id="checkout">
+      <h2>Checkout</h2>
+
+      <form id="checkout-form" novalidate>
+        <div class="form-group">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="fullName" />
+          <p class="error-message" id="full-name-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <p class="error-message" id="email-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" />
+          <p class="error-message" id="phone-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Delivery address</label>
+          <textarea id="address" name="address" rows="3"></textarea>
+          <p class="error-message" id="address-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="payment">Payment method</label>
+          <select id="payment" name="payment">
+            <option value="">Select a payment method</option>
+            <option value="cod">Cash on Delivery</option>
+            <option value="gcash">GCash</option>
+            <option value="card">Credit/Debit Card</option>
+          </select>
+          <p class="error-message" id="payment-error"></p>
+        </div>
+
+        <p class="error-message" id="checkout-error"></p>
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+
+    <section id="order-summary" hidden>
+      <h2>Order Confirmation</h2>
+      <div id="order-details"></div>
+      <a href="index.html" class="checkout-button">Back to Shop</a>
+    </section>
+
+    <script type="module" src="js/pages/checkoutPage.js"></script>
+  </body>
+</html>

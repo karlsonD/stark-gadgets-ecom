@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 17 Pro Max",
+    "brand": "Apple",
+    "price": 74999,
+    "image": "images/iphone17.jpg",
+    "stock": 9,
+    "category": "Phones",
+    "storage": 256
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "price": 52999,
+    "image": "images/galaxys24.jpg",
+    "stock": 4,
+    "category": "Phones",
+    "storage": 256
+  },
+  {
+    "id": 3,
+    "name": "Apple Watch Series 9",
+    "brand": "Apple",
+    "price": 39999,
+    "image": "images/appleseries9.jpg",
+    "stock": 6,
+    "category": "Smartwatches",
+    "batteryLife": 40
+  },
+  {
+    "id": 4,
+    "name": "Galaxy Watch6",
+    "brand": "Samsung",
+    "price": 15990,
+    "image": "images/watch6.jpg",
+    "stock": 5,
+    "category": "Smartwatches",
+    "batteryLife": 40
+  },
+  {
+    "id": 5,
+    "name": "Airpods Pro",
+    "brand": "Apple",
+    "price": 14990,
+    "image": "images/airpodspro.jpg",
+    "stock": 21,
+    "category": "Accessories",
+    "accessoryType": "Earphones"
+  },
+  {
+    "id": 6,
+    "name": "65W USB-C Charger",
+    "brand": "Anker",
+    "price": 2490,
+    "image": "images/anker.jpg",
+    "stock": 35,
+    "category": "Accessories",
+    "accessoryType": "Charger"
+  }
+]

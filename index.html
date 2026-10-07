@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stark Gadgets</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    
+    <header class="site-header">
+      <h1>Stark Gadgets</h1>
+      
+     
+      <div class="header-actions">
+        <a href="index.html" class="nav-link">Shop</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </header>
+
+    <p id="status-message"></p>
+    
+    <nav id="category-filters">
+      <button data-category="All" class="active">All</button>
+      <button data-category="Phones">Phones</button>
+      <button data-category="Smartwatches">Smartwatches</button>
+      <button data-category="Accessories">Accessories</button>
+    </nav>
+    
+    <section id="controls">
+      <input type="search" id="search-input" placeholder="Search products..." />
+      <select id="sort-select">
+        <option value="default">Sort by</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+    </section>
+    
+    <main id="product-list"></main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
